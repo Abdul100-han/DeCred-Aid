@@ -1,0 +1,30 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@import 'shadcn/tailwind.css';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-border: var(--border);
+  --color-ring: var(--ring);
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+}
+
+:root {
+  color-scheme: dark;
+  --background: #090d16;
+  --foreground: #f8fafc;
+  --border: rgba(255,255,255,.1);
+  --ring: #00f2fe;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--background); color: var(--foreground); font-family: Arial, Helvetica, sans-serif; }
+button, input, select { font: inherit; }
+::selection { background: rgba(0,242,254,.28); color: white; }
+input[type='date']::-webkit-calendar-picker-indicator { filter: invert(1); opacity: .45; }
