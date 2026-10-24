@@ -24,7 +24,12 @@
 
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
-body { margin: 0; background: var(--background); color: var(--foreground); font-family: Arial, Helvetica, sans-serif; }
+body {
+  margin: 0;
+  background-color: #090D16;
+  color: #FFFFFF;
+  font-family: Arial, Helvetica, sans-serif;
+}
 button, input, select { font: inherit; }
 ::selection { background: rgba(0,242,254,.28); color: white; }
 input[type='date']::-webkit-calendar-picker-indicator { filter: invert(1); opacity: .45; }
